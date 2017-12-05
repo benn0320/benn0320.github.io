@@ -1,0 +1,53 @@
+/* ***** BLACK AND WHITE ARCHITECTURE CSS  - MODAL 6*************/
+
+.image {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 7.5px 0;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.055);
+}
+
+
+/* Medium Screens */
+
+@media (min-width: 640px) {
+  .image {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .image {
+    width: 30%;
+    margin: 1.5%;
+  }
+}
+
+
+/* B + W architecture images */
+
+.modal img {
+  width: 80vw;
+  max-width: 720px;
+  height: auto;
+}
+
+@media (max-height: 640px) and (orientation: landscape) {
+  .close {
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px 15px;
+    color: #FFF;
+    background-color: #000;
+    text-align: right;
+    z-index: 1;
+  }
+}

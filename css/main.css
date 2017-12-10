@@ -5587,7 +5587,7 @@ p.small {
   font-size: 16px; }
 
 a, a.active, a:active, a:focus, a:hover {
-  color: #EF6362;
+  color: #ef6362;
   outline: none; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -5600,6 +5600,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-centered {
   margin: 0 auto; }
+
+#contact {
+  background-color: white; }
 
 /* LOGO WITH ANIMATION */
 .logo {
@@ -5698,8 +5701,8 @@ section.success {
 
 #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
   color: white;
-  border-color: #EF6362;
-  background-color: #EF6362; }
+  border-color: #ef6362;
+  background-color: #ef6362; }
 
 /* MEDIA SCREEN MIN-WIDTH 992px */
 @media (min-width: 992px) {
@@ -5722,10 +5725,10 @@ section.success {
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: white;
     border-radius: 3px;
-    background: #EF6362; }
+    background: #ef6362; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: white;
-    background: #EF6362; }
+    background: #ef6362; }
   #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -6089,3 +6092,43 @@ footer .footer-below {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+/******************** NEWEST ************/
+.image {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 7.5px 0;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.3s; }
+
+.image:hover {
+  transform: scale(1.055); }
+
+/* Medium Screens */
+@media (min-width: 640px) {
+  .image {
+    width: 48%;
+    margin: 1%; } }
+
+@media (min-width: 1200px) {
+  .image {
+    width: 30%;
+    margin: 1.5%; } }
+
+/* B + W architecture images */
+.modal img {
+  width: 80vw;
+  max-width: 720px;
+  height: auto; }
+
+@media (max-height: 640px) and (orientation: landscape) {
+  .close {
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px 15px;
+    color: #FFF;
+    background-color: #000;
+    text-align: right;
+    z-index: 1; } }
